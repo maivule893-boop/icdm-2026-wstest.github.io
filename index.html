@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>ICDM 2026 Workshop – EvoGraphDM</title>
@@ -10,11 +10,11 @@
         }
 
         .top-nav {
-            background-color: #00000080;
+            background-color: #000000a0;
             border-radius: 8px;
             position: fixed;
             top: 5px;
-            width: 80%;
+            width: 900px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 999;
@@ -57,7 +57,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: 740px;
             background-color: rgba(0, 0, 0, 0.4);
             pointer-events: none;
         }
@@ -76,7 +76,7 @@
             font-weight: bold;
             color: #ffffff;
             margin: 0;
-            z-index: 999;
+            z-index: 99;
         }
 
         .home-text p {
@@ -115,6 +115,10 @@
 
         #topics, #submissions, #speakers, #members {
             background-color: #eeeeee;
+        }
+
+        #organizers {
+            height: 1540px;
         }
 
         #topics .section-title {
@@ -190,7 +194,66 @@
         }
 
         .content p {
+            line-height: 1.75;
+            font-size: 20px;
+            text-align: justify;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        .topic-list {
+            font-size: 20px;
+            line-height: 1.75;
+            text-align: justify;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        #dates p {
+            line-height: 1.75;
+            font-size: 35px;
             text-align: center;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        #organizers .organizer-outer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            gap: 50px;
+            margin: 0 auto;
+            width: 1100px;
+        }
+
+        #organizers .organizer-image {
+            text-align: center;
+            width: 280px;
+        }
+
+        #organizers img {
+            height: 300px;
+            width: 230px;
+            border-radius: 50% / 30%;
+        }
+
+        #organizers .organizer-intro {
+            line-height: 1.75;
+            font-size: 20px;
+            text-align: center;
+            margin: 5px auto;
+        }
+
+        #organizers p {
+            font-size: 20px;
+            text-align: justify;
+            max-width: 850px;
+        }
+
+        #organizers hr {
+            width: 1200px;
         }
     </style>
 </head>
@@ -237,37 +300,60 @@
 <div class="content">
     <div id="about" class="section">
         <h1 class="section-title">About</h1>
-        <p>hhh</p>
-        <hr>
-        <p>hhh</p>
-        <hr>
-        <p>hhh</p>
-        <hr>
-        <p>hhh</p>
+        <p>
+            Graph, relational, heterogeneous, and structured data are central to modern data mining, with applications
+            spanning web platforms, recommender systems, finance, cybersecurity, science, and cyber-physical systems.
+            Such data are often large-scale, interconnected, and complex, and many real-world settings also involve
+            streaming updates, distribution shift, and long-term evolution. These challenges call for advances not only
+            in graph mining and learning, but also in broader methods for relational reasoning, discovery, retrieval,
+            recommendation, system support, and reliable evaluation.
+        </p>
+        <p>The First ICDM Workshop on Evolving Graph Data Mining and Continual Relational Learning (EvoGraphDM) aims to
+            provide a focused yet inclusive forum for researchers and practitioners working on data mining and learning
+            for graph, relational, heterogeneous, and structured data. While the workshop is motivated by evolving graph
+            data mining and continual relational learning, it is intentionally broader than a graph-only or
+            temporal-only
+            venue. We welcome contributions on dynamic, streaming, continual, and non-stationary settings, as well as
+            broader methods, systems, and applications that are relevant to interconnected and structured data
+            environments,
+            including work that may not be explicitly graph-centric. EvoGraphDM seeks to encourage interaction across
+            data mining, machine learning, data management, information retrieval, and real-world application domains,
+            and to highlight research that is both methodologically strong and practically useful.
+        </p>
     </div>
     <div id="topics" class="section">
         <h1 class="section-title">Topics of Interest</h1>
-        <p>hhh</p>
-        <hr>
-        <p>hhh</p>
-        <hr>
-        <p>hhh</p>
-        <hr>
-        <p>hhh</p>
+        <p>We welcome submissions on graph, relational, heterogeneous, and structured data mining and learning more
+            broadly,
+            including but not limited to evolving, temporal, streaming, continual, and non-stationary settings. Topics
+            of
+            interest include, but are not limited to:</p>
+        <ul class="topic-list">
+            <li>Data Mining and Learning for Graph, Relational, and Structured Data</li>
+            <li>Knowledge Graphs, Heterogeneous Data, and Relational Intelligence</li>
+            <li>Analytics, Discovery, Retrieval, Recommendation, and Visualization</li>
+            <li>Dynamic, Streaming, Continual, and Non-stationary Data Mining</li>
+            <li>Systems, Scalability, Distributed Computing, and Evaluation</li>
+            <li>Applications in Web, Social, Recommender, Scientific, and Cyber-Physical Systems</li>
+        </ul>
     </div>
     <div id="dates" class="section">
         <h1 class="section-title">Important Dates</h1>
-        <p>hhh</p>
+        <p>Workshop Paper Submission: <strong>August 20, 2026</strong></p>
         <hr>
-        <p>hhh</p>
+        <p>Notification of Acceptance: <strong>September 18, 2026</strong></p>
         <hr>
-        <p>hhh</p>
+        <p>Camera-ready Deadline and Copyright Form: TBA</p>
         <hr>
-        <p>hhh</p>
+        <p>All deadlines are <strong>11:59 PM</strong> AOE (Anywhere on Earth).</p>
     </div>
     <div id="submissions" class="section">
         <h1 class="section-title">Submission Guidelines</h1>
-        <p>hhh</p>
+        <p>Papers submitted to the workshop will undergo peer review. Submissions should be no more than 8 pages, with
+            up
+            to 2 additional pages for references. Accepted workshop papers will be published in the dedicated ICDMW
+            proceedings by the IEEE Computer Society Press. For each accepted paper, at least one author must pay a full
+            author registration and attend the conference to present the work on site.</p>
         <hr>
         <p>hhh</p>
         <hr>
@@ -297,13 +383,77 @@
     </div>
     <div id="organizers" class="section">
         <h1 class="section-title">Organizers</h1>
-        <p>hhh</p>
+        <div class="organizer-outer">
+            <div class="organizer-image">
+                <img src="Xiaofan Li.png" alt="Xiaofan Li">
+                <p class="organizer-intro"><strong>Xiaofan Li</strong></p>
+                <p class="organizer-intro">Nanjing University</p>
+            </div>
+            <p>
+                Xiaofan Li is an Assistant Professor and Ph.D. supervisor with the School of Computer Science, Nanjing
+                University. His research lies at the intersection of databases, graph-structured data, and large
+                language
+                models, with particular interests in graph databases, explainable graph neural networks, and data
+                management
+                methods for emerging AI systems. Before joining Nanjing University, he worked at Nanyang Technological
+                University and the L3S Research Center at Leibniz University Hannover, and he was recognized as a DAAD
+                AInet
+                Fellow. He has published in leading venues such as SIGMOD, ICDE, WWW, and ICDM, and has contributed to
+                the
+                research community through conference and journal reviewing as well as conference organization,
+                including
+                serving as a proceeding co-chair of HIS 2024. His background is closely aligned with EvoGraphDM,
+                especially
+                in graph-structured data management, temporal and relational learning over structured data, and the
+                interface
+                between graph mining and modern AI.
+            </p>
+        </div>
         <hr>
-        <p>hhh</p>
+        <div class="organizer-outer">
+            <div class="organizer-image">
+                <img src="Haipeng Dai.png" alt="Haipeng Dai">
+                <p class="organizer-intro"><strong>Haipeng Dai</strong></p>
+                <p class="organizer-intro">Nanjing University</p>
+            </div>
+            <p>
+                Haipeng Dai is a Professor and Ph.D. supervisor with the School of Computer Science, Nanjing University,
+                and
+                a member of the Laboratory of Advanced Networking and Data Science (LANDS). His research spans network
+                data
+                mining, edge intelligence, large-model collaboration, intelligent IoT, mobile computing, and
+                cyber-physical
+                systems, all with clear relevance to data-driven systems operating in dynamic real-world environments.
+                He
+                has published extensively in leading venues such as INFOCOM, SIGMOD, VLDB, KDD, ICDE, WWW, UbiComp, TON,
+                TKDE, and TMC, and has received multiple recognitions including the Young Chang Jiang Scholar award. He
+                brings
+                a strong data mining and systems perspective to EvoGraphDM, particularly for evolving relational
+                structures
+                arising in networked, intelligent, and cyber-physical systems.
+            </p>
+        </div>
         <hr>
-        <p>hhh</p>
-        <hr>
-        <p>hhh</p>
+        <div class="organizer-outer">
+            <div class="organizer-image">
+                <img src="Rui Zhou.png" alt="Rui Zhou">
+                <p class="organizer-intro"><strong>Rui Zhou</strong></p>
+                <p class="organizer-intro">Swinburne University of Technology</p>
+            </div>
+            <p>
+                Rui Zhou is a Senior Lecturer in the Department of Computing Technologies at Swinburne University of
+                Technology.
+                His research areas include data management and data science, and his recent publication record spans
+                graph-structured and relational data problems, including temporal and heterogeneous information
+                networks,
+                knowledge-graph-related mining, and graph-oriented optimization. His work has appeared in venues such as
+                SIGMOD, VLDB, ICDE, KDD, and ICDM, as well as related international forums, through sustained
+                collaborations
+                on graph and data management research. He brings a strong international perspective to EvoGraphDM and
+                complements the organizer team with expertise in structured data, graph-oriented data mining, temporal
+                relational analysis, and academic outreach across Australia and the broader international community.
+            </p>
+        </div>
     </div>
     <div id="members" class="section">
         <h1 class="section-title">PC Members</h1>

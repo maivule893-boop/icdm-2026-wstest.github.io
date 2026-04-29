@@ -111,12 +111,27 @@
             position: relative;
             z-index: 2;
             font-size: clamp(32px, 10vw, 110px);
+            max-width: 1000px;
             font-weight: 800;
             color: #ffffff;
             text-align: center;
             padding: 0 20px;
             letter-spacing: -0.02em;
             text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .home-text .text2 {
+            font-family: "Fjalla One", sans-serif;
+            font-weight: 500;
+            color: aquamarine;
+            font-size: clamp(16px, 4vw, 40px);
+        }
+
+        .home-text .text3 {
+            font-family: "Noticia Text", serif;
+            font-weight: 400;
+            color: chartreuse;
+            font-size: clamp(16px, 4vw, 40px);
         }
 
         .home-text p {
@@ -324,9 +339,9 @@
                 padding: 3px 6px;
             }
 
-            .home-text {
-                font-size: 60px;
-                line-height: 1.4;
+            .home-text .text1 {
+                max-width: 500px;
+
             }
 
             #organizers .organizer-outer {
@@ -354,13 +369,12 @@
         }
 
         @media (max-width: 570px) {
-            .home-text {
-                font-size: 50px;
-                line-height: 1.2;
-            }
-
             .content p {
                 text-align: center;
+            }
+
+            .home-text .text1 {
+                font-size: 60px;
             }
 
             #dates p {
@@ -402,8 +416,12 @@
 
 <div class="home-image" id="home">
     <div class="home-text">
-        <p>WELCOM TO</p>
-        <p>ICDM 2026 !</p>
+        <p class="text1">ICDM 2026</p>
+        <p class="text1">Workshop</p>
+        <hr>
+        <p class="text2">1st IEEE ICDM Workshop on</p>
+        <p class="text3">Evolving Graph Data Mining and Continual</p>
+        <p class="text3">Relational Learning(EvoGraphDM)</p>
     </div>
 </div>
 
